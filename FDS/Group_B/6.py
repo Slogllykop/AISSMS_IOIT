@@ -46,8 +46,7 @@ def displayTop5(array):
 
 students = list(map(int, input('Enter percentages of students: ').split()))
 
-sort_choice = int(input(
-    "Which sorting algorithm would you like to use?\n1] Selection Sort\n2] Bubble Sort\n3] Both\nEnter your choice: "))
+sort_choice = int(input("Which sorting algorithm would you like to use?\n1] Selection Sort\n2] Bubble Sort\n3] Both\nEnter your choice: "))
 
 print('\n\nOriginal marks: ', students)
 
