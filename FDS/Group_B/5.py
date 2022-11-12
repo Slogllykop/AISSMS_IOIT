@@ -119,8 +119,7 @@ while flag == 1:
         find_roll = int(input("Enter the Roll Number to be searched : "))
         index = NR_Ternary_Search(sort_Roll, find_roll)
         if index != -1:
-            print("The Roll Number", find_roll,
-                  "is found at position", index+1)
+            print("The Roll Number", find_roll, "is found at position", index+1)
         else:
             print("Roll Number", find_roll, "nor found!!")
 
@@ -130,8 +129,7 @@ while flag == 1:
         right = len(sort_Roll) - 1
         index = R_Ternary_Search(sort_Roll, left, right, find_roll)
         if index != -1:
-            print("The Roll Number", find_roll,
-                  "is found at position", index+1)
+            print("The Roll Number", find_roll, "is found at position", index+1)
         else:
             print("Roll Number", find_roll, "nor found!!")
 
