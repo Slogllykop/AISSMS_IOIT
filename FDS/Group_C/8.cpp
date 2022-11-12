@@ -34,31 +34,31 @@ class list
 {
     node *start;
 
-public:
-    list()
-    {
-        start = NULL;
-    }
-    void create();
-    void display();
-    void insertAtBeginning();
-    void insertAtEnd();
-    void insertAfter();
-    void deleteAtFirst();
-    void deleteByValue();
-    void deleteAtEnd();
-    int computeTotal();
-    void sortList();
-    void concatList(list &q1);
-    void displayRev(node *t);
-    bool reverseDisplay() // function is only for passing start as argument to recursive function
-    {
-        if (start == NULL)
-            return false;
-        node *temp = start;
-        displayRev(temp);
-        return true;
-    }
+    public:
+        list()
+        {
+            start = NULL;
+        }
+        void create();
+        void display();
+        void insertAtBeginning();
+        void insertAtEnd();
+        void insertAfter();
+        void deleteAtFirst();
+        void deleteByValue();
+        void deleteAtEnd();
+        int computeTotal();
+        void sortList();
+        void concatList(list &q1);
+        void displayRev(node *t);
+        bool reverseDisplay() // function is only for passing start as argument to recursive function
+        {
+            if (start == NULL)
+                return false;
+            node *temp = start;
+            displayRev(temp);
+            return true;
+        }
 };
 
 void list::displayRev(node *t)
@@ -183,8 +183,7 @@ void list::insertAfter()
     }
     else
     {
-        cout << "\n"
-             << prev_no << " is not in list.";
+        cout << "\n" << prev_no << " is not in list.";
     }
 }
 
@@ -313,7 +312,7 @@ void list::concatList(list &q1)
         cout << "\nList 2 is empty";
         return;
     }
-    p = start; // first list
+    p = start; // first list 
     while (p->next != NULL)
     {
         p = p->next;
@@ -321,7 +320,7 @@ void list::concatList(list &q1)
 
     p->next = t;
     q1.start = NULL; // second list is set to null
-    cout << "\nAfter concatenation list : \n";
+    cout<< "\nAfter concatenation list : \n";
     display();
 }
 
@@ -331,8 +330,7 @@ int main()
     int choice, selectList;
     list l1, l2;
     l = &l1;
-X:
-    cout << "\nSelect List\n1.List 1\n2.List 2\nEnter choice : ";
+    X: cout << "\nSelect List\n1.List 1\n2.List 2\nEnter choice : ";
     cin >> selectList;
     if (selectList == 1)
     {
@@ -364,7 +362,8 @@ X:
         case 3:
             l->insertAtEnd();
             break;
-        case 4:
+        case
+            4:
             l->insertAfter();
             break;
         case 5:
@@ -373,10 +372,12 @@ X:
         case 6:
             l->deleteAtFirst();
             break;
-        case 7:
+        case
+            7:
             l->deleteAtEnd();
             break;
-        case 8:
+        case
+            8:
             l->deleteByValue();
             break;
         case 9:
